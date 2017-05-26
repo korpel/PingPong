@@ -17,6 +17,7 @@
 		EA10F9371ED2302800055D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA10F9351ED2302800055D79 /* LaunchScreen.storyboard */; };
 		EA10F9421ED2302800055D79 /* PingPongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA10F9411ED2302800055D79 /* PingPongTests.swift */; };
 		EA10F94D1ED2302800055D79 /* PingPongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA10F94C1ED2302800055D79 /* PingPongUITests.swift */; };
+		EA10F9791ED8B74700055D79 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA10F9781ED8B74700055D79 /* MenuVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		EA10F9481ED2302800055D79 /* PingPongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingPongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA10F94C1ED2302800055D79 /* PingPongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPongUITests.swift; sourceTree = "<group>"; };
 		EA10F94E1ED2302800055D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA10F9781ED8B74700055D79 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				EA10F92C1ED2302800055D79 /* GameScene.swift */,
 				EA10F92E1ED2302800055D79 /* GameViewController.swift */,
 				EA10F9301ED2302800055D79 /* Main.storyboard */,
+				EA10F9781ED8B74700055D79 /* MenuVC.swift */,
 				EA10F9331ED2302800055D79 /* Assets.xcassets */,
 				EA10F9351ED2302800055D79 /* LaunchScreen.storyboard */,
 				EA10F9381ED2302800055D79 /* Info.plist */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA10F92D1ED2302800055D79 /* GameScene.swift in Sources */,
+				EA10F9791ED8B74700055D79 /* MenuVC.swift in Sources */,
 				EA10F92F1ED2302800055D79 /* GameViewController.swift in Sources */,
 				EA10F9271ED2302800055D79 /* AppDelegate.swift in Sources */,
 			);
@@ -519,6 +523,7 @@
 				EA10F9531ED2302800055D79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA10F9541ED2302800055D79 /* Build configuration list for PBXNativeTarget "PingPongTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +532,7 @@
 				EA10F9561ED2302800055D79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA10F9571ED2302800055D79 /* Build configuration list for PBXNativeTarget "PingPongUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +541,7 @@
 				EA10F9591ED2302800055D79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
