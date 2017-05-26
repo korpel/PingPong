@@ -24,11 +24,17 @@ class GameScene: SKScene {
         startGame()
         ball = self.childNode(withName: "ball") as! SKSpriteNode
         enemy = self.childNode(withName: "enemy") as! SKSpriteNode
+        
+        enemy.position.y = (self.frame.height / 2) - 50
+        
         main = self.childNode(withName: "main") as! SKSpriteNode
+        
+        main.position.y = (-self.frame.height / 2) + 50
+        
         topLabel = self.childNode(withName: "topLabel") as! SKLabelNode
         botLabel = self.childNode(withName: "botLabel") as! SKLabelNode
         
-        ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
+        ball.physicsBody?.applyImpulse(CGVector(dx: 10, dy: 10))
     
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
         
@@ -51,11 +57,11 @@ class GameScene: SKScene {
      
         if playerWhoWon == main {
             score[0] += 1
-            ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+            ball.physicsBody?.applyImpulse(CGVector(dx: 10, dy: 10))
         }
         else if playerWhoWon == enemy {
             score[1] += 1
-            ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
+            ball.physicsBody?.applyImpulse(CGVector(dx: -10, dy: -10))
         }
         topLabel.text = "\(score[1])"
         botLabel.text = "\(score[0])"
@@ -89,12 +95,12 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.0))
        
-        if ball.position.y <= main.position.y - 70 {
+        if ball.position.y <= main.position.y - 30 {
             addScore(playerWhoWon: enemy)
             
         }
         else if ball.position.y 
-            >= enemy.position.y + 70 {
+            >= enemy.position.y + 30 {
             addScore(playerWhoWon: main)
         }
         
